@@ -1,0 +1,20 @@
+# permissions for end users to view cloudapps.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: cloudapp-viewer-role
+rules:
+- apiGroups:
+  - group-team.example.io
+  resources:
+  - cloudapps
+  verbs:
+  - get
+  - list
+  - watch
+- apiGroups:
+  - group-team.example.io
+  resources:
+  - cloudapps/status
+  verbs:
+  - get

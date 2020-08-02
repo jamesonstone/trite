@@ -1,0 +1,7 @@
+apiVersion: group-team.example.io/v1alpha1
+kind: CloudApp
+metadata:
+  name: cloudapp-sample
+spec:
+  # Add fields here
+  foo: bar

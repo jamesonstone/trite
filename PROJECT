@@ -1,0 +1,7 @@
+domain: example.io
+repo: github.com/jstone28/trite
+resources:
+- group: group-team
+  kind: CloudApp
+  version: v1alpha1
+version: "2"

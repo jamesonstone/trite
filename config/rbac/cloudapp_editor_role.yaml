@@ -1,0 +1,24 @@
+# permissions for end users to edit cloudapps.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: cloudapp-editor-role
+rules:
+- apiGroups:
+  - group-team.example.io
+  resources:
+  - cloudapps
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - group-team.example.io
+  resources:
+  - cloudapps/status
+  verbs:
+  - get
